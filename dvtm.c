@@ -422,7 +422,7 @@ draw_border(Client *c) {
 		c->title[maxlen] = '\0';
 	}
 
-	mvwprintw(c->window, 0, 2, "[%s%s#%d]",
+	mvwprintw(c->window, 0, 2, "/%s%s#%d/",
 	          *c->title ? c->title : "",
 	          *c->title ? " | " : "",
 	          c->order);
