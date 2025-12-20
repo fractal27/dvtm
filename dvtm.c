@@ -2,8 +2,7 @@
  * The initial "port" of dwm to curses was done by
  *
  * © 2007-2016 Marc André Tanner <mat at brain-dump dot org>
- *
- * It is highly inspired by the original X11 dwm and
+ * * It is highly inspired by the original X11 dwm and
  * reuses some code of it which is mostly
  *
  * © 2006-2007 Anselm R. Garbe <garbeam at gmail dot com>
@@ -33,6 +32,7 @@
 #include <stdbool.h>
 #include <errno.h>
 #include <pwd.h>
+// #include <ncurses.h>
 #if defined __CYGWIN__ || defined __sun
 # include <termios.h>
 #endif
@@ -351,9 +351,9 @@ drawbar(void) {
 		printw(TAG_SYMBOL, tags[i]);
 	}
 
-	attrset(runinall ? TAG_SEL : TAG_NORMAL);
-	addstr(layout->symbol);
-	attrset(TAG_NORMAL);
+	// attrset(runinall ? TAG_SEL : TAG_NORMAL);
+	// addstr(layout->symbol);
+	// attrset(TAG_NORMAL);
 
 	for (unsigned int i = 0; i < MAX_KEYS && keys[i]; i++) {
 		if (keys[i] < ' ')

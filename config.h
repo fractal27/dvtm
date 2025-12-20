@@ -21,8 +21,8 @@ enum {
 static Color colors[] = {
 	[DEFAULT] = { .fg = -1,         .bg = -1,    .fg256 = -1, .bg256 = -1, },
 	[BLUE]    = { .fg = COLOR_BLUE, .bg = -1,    .fg256 = 68, .bg256 = -1, },
-	[RED]    =  { .fg = COLOR_RED, .bg = -1,      .fg256 = 124, .bg256 = -1, },
-	[GREEN]    =  { .fg = COLOR_GREEN, .bg = -1, .fg256 = 113, .bg256 = -1, },
+	[RED]    =  { .fg = -1, .bg = COLOR_RED,      .fg256 = -1, .bg256 = 124, },
+	[GREEN]    =  { .fg = COLOR_BLACK, .bg = COLOR_GREEN, .fg256 = 0, .bg256 = 10, },
 };
 #include <ncurses.h>
 #define COLOR(c)        COLOR_PAIR(colors[c].pair)
@@ -46,9 +46,9 @@ static Color colors[] = {
 /* number of clients in master area */
 #define NMASTER 1
 /* scroll back buffer size in lines */
-#define SCROLL_HISTORY 500
+#define SCROLL_HISTORY 8192
 /* printf format string for the tag in the status bar */
-#define TAG_SYMBOL   "[ %s ]"
+#define TAG_SYMBOL   "  %s  "
 /* curses attributes for the currently selected tags */
 #define TAG_SEL      (COLOR(GREEN) | A_BOLD)
 /* curses attributes for not selected tags which contain no windows */

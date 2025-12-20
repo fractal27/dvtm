@@ -1,0 +1,40 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-std=c99",
+      "-I.",
+      "-DNDEBUG",
+      "-D_POSIX_C_SOURCE=200809L",
+      "-D_XOPEN_SOURCE=700",
+      "-D_XOPEN_SOURCE_EXTENDED",
+      "-DVERSION=\"v0.15-56-g95e8d06-dirty\"",
+      "-o",
+      "dvtm",
+      "dvtm.c"
+    ],
+    "directory": "/home/ganon/suckless-fw/dvtm",
+    "file": "/home/ganon/suckless-fw/dvtm/dvtm.c",
+    "output": "/home/ganon/suckless-fw/dvtm/dvtm"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-std=c99",
+      "-I.",
+      "-DNDEBUG",
+      "-D_POSIX_C_SOURCE=200809L",
+      "-D_XOPEN_SOURCE=700",
+      "-D_XOPEN_SOURCE_EXTENDED",
+      "-DVERSION=\"v0.15-56-g95e8d06-dirty\"",
+      "-o",
+      "dvtm",
+      "vt.c"
+    ],
+    "directory": "/home/ganon/suckless-fw/dvtm",
+    "file": "/home/ganon/suckless-fw/dvtm/vt.c",
+    "output": "/home/ganon/suckless-fw/dvtm/dvtm"
+  }
+]

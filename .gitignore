@@ -2,3 +2,4 @@
 /dvtm-editor
 *.css
 *.html
+.cache/*
